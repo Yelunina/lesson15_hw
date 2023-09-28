@@ -8,15 +8,15 @@ public class Task2 {
         int[] arr = new int[20];
         fillArray(arr, -100, 100);
         printArray(arr);
-        int[] arr1=evenNumbersArray(arr);
+        int[] arr1 = positiveNumbersArray(arr);
         printArray(arr1);
 
     }
 
-    public static int[] evenNumbersArray(int[] arr) {
+    public static int[] positiveNumbersArray(int[] arr) {
         int[] arr1 = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) {
+            if (arr[i] >= 0) {
                 arr1[i] = arr[i];
             }
         }
